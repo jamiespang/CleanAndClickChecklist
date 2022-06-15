@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>CleanAndClick</title>
+
+</head>
+
+<body>
+    <div id="countholder">
+        <div><span class="days" id="days"></span>
+            <div class="smalltext">Days</div>
+        </div>
+        <div><span class="hours" id="hours"></span>
+            <div class="smalltext">Hours</div>
+        </div>
+        <div><span class="minutes" id="minutes"></span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div><span class="seconds" id="seconds"></span>
+            <div class="smalltext">Seconds</div>
+        </div>
+    </div>
+    <script src="file.js">
+    </script>
+
+    <div id="DailyChores" class="DailyChores">
+        <h1>Daily</h1>
+    </div>
+
+    <ul id="Daily">
+        <label class="container">
+  <span class="checkmark"></span>
+</label><input type="checkbox" id="dishes" name="dishes" value="dishes">
+        <label for="dishes">Dishes</label><br>
+        <input type="checkbox" id="clutter" name="clutter" value="clutter">
+        <label for="clutter">Clear clutter from livin spaces</label><br>
+        <input type="checkbox" id="counters" name="counters" value="counters">
+        <label for="counters"> Wipe off countertops</label><br>
+        <input type="checkbox" id="mail" name="mail" value="mail">
+        <label for="mail"> Sort mail and paper clutter</label><br>
+        <input type="checkbox" id="garbage" name="garbage" value="garbage">
+        <label for="garbage"> Take out the garbage if needed</label><br>
+        <input type="checkbox" id="bed" name="bed" value="bed">
+        <label for="bed"> Make the beds</label><br>
+        <input type="checkbox" id="laundry" name="laundry" value="laundry">
+        <label for="laundry"> Check the laundry and wash if needed</label><br>
+        <input type="text" id="myInput" placeholder="Add a chore">
+        <span onclick="newElement()" Btntype>Add</span>
+    </ul>
+
+    <div id="WeeklyChores" class="WeeklyChores">
+        <h1>Weekly Chores</h1>
+    </div>
+    <h2>Monday-Bathrooms</h2>
+
+    <ul id="Monday">
+        <label class="container">
+  <span class="checkmark"></span>
+</label>
+        <input type="checkbox" id="sinks" name="sinks" value="sinks">
+        <label for="sinks ">Scrub the sinks</label><br>
+        <input type="checkbox" id="shower" name="shower" value="shower">
+        <label for="shower">Clean the showers and bathtub</label><br>
+        <input type="checkbox" id="toilets" name="toilets" value="toilets">
+        <label for="toilets ">Clean the toilets</label><br>
+        <input type="checkbox" id="mirrors" name="mirrors" value="mirrors">
+        <label for="mirrors">Clean the mirrors</label><br>
+        <input type="checkbox" id="floors" name="floors" value="floors">
+        <label for="floors">Sweep and mop the floors</label><br>
+        <input type="checkbox" id="towels" name="towels" value="towels">
+        <label for="towels">Replace the hand towels</label><br>
+        <input type="text" id="myInput" placeholder="Add a chore">
+        <span onclick="newElement()" class="addBtn">Add</span></ul>
+    </ul>
+    <h2>Tuesday-Kitchen</h2>
+    <ul id="Tuesday">
+        <label class="container">
+  <span class="checkmark"></span>
+</label>
+        <input type="checkbox" id="sinks" name="sinks" value="sinks">
+        <label for="sinks">Clean the sink and countertops</label><br>
+        <input type="checkbox" id="table" name="table" value="table">
+        <label for="table">Clean the table and other surfaces</label><br>
+        <input type="checkbox" id="appliances" name="appliances" value="appliances">
+        <label for="appliances">Clean the appliances</label><br>
+        <input type="checkbox" id="garbage" name="garbage" value="garbage">
+        <label for="garbage">Take out the garbage</label><br>
+        <input type="checkbox" id="floors" name="floors" value="floors">
+        <label for="floors">Sweep and mop the floors</label><br>
+        <input type="checkbox" id="towels" name="towels" value="towels">
+        <label for="towels">Replace the hand towels</label><br>
+        <input type="text" id="myInput" placeholder="Add a chore">
+        <span onclick="newElement()" class="addBtn">Add</span></ul>
+
+
+    <h2>Wednesday-Family Room</h2>
+    <ul id="Wednesday ">
+        <label class="container ">
+  <span class="checkmark "></span>
+</label>
+        <input type="checkbox" id="floors" name="floors" value="floors">
+        <label for="floors">Sweep, mop and vaccuum</label><br>
+        <input type="checkbox" id="dust" name="dust" value="dust">
+        <label for="dust">Dust tables and other surfaces</label><br>
+        <input type="checkbox" id="mirrors" name="mirrors" value="mirrors">
+        <label for="mirrors">Clean windows, mirrors and electronics</label><br>
+        <input type="checkbox" id="couch" name="couch" value="couch">
+        <label for="couch">Vaccuum the couches</label><br>
+        <input type="text" id="myInput" placeholder="Add a chore">
+        <span onclick="newElement()" class="addBtn">Add</span></ul>
+
+
+
+    <h2>Thursday-Laundry</h2>
+    <ul id="Thursday">
+        <label class="container">
+  <span class="checkmark"></span>
+</label>
+        <input type="checkbox" id="garbage" name="garbage" value="garbage">
+        <label for="garbage">Empty all of the garbage cans</label><br>
+        <input type="checkbox" id="garbage" name="garbage" value="garbage">
+        <label for="garbage">Take the garbage to the curb</label><br>
+        <input type="checkbox" id="donate" name="donate" value="donate">
+        <label for="donate">Donate or toss any unused or broken items</label><br>
+        <input type="checkbox" id="mail" name="mail" value="mail">
+        <label for="mail">Throw away paper clutter and mail</label><br>
+        <input type="checkbox" id="yard" name="yard" value="yard">
+        <label for="yard">Mow and pull weeds</label><br>
+        <input type="text" id="myInput" placeholder="Add a chore">
+        <span onclick="newElement()" class="addBtn">Add</span></ul>
+
+    <h2>Friday-Sunday</h2>
+    <p>ENJOY THE WEEKEND!</p>
+</body>
+
+</html>
